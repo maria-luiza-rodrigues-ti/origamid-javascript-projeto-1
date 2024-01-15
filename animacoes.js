@@ -1,6 +1,6 @@
 function initTabNav() {
-  const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
-  const tabContent = document.querySelectorAll('[data-tab="content"] section');
+  const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
+  const tabContent = document.querySelectorAll("[data-tab='content'] section");
 
   if (tabMenu.length && tabContent.length) {
     tabContent[0].classList.add("ativo");
@@ -24,7 +24,7 @@ initTabNav();
 
 function initAccordion() {
   const accordionList = document.querySelectorAll(
-    '[data-anime="accordion"] dt'
+    "[data-anime='accordion'] dt"
   );
   const activeClass = "ativo";
 
@@ -73,7 +73,7 @@ function initScrollSuave() {
 initScrollSuave();
 
 function initAnimacaoScroll() {
-  const sections = document.querySelectorAll('[data-anime="scroll"]');
+  const sections = document.querySelectorAll("[data-anime='scroll']");
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.6;
 
