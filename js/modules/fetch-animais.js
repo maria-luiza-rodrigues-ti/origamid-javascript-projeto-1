@@ -1,8 +1,6 @@
 import AnimaNumeros from "./anima-numeros.js";
 
 export default function fetchAnimais(url, target) {
-  const numerosGrid = document.querySelector(target);
-
   // Cria a div contendo informações com o total de animais
   function createAnimal(animal) {
     const div = document.createElement("div");
@@ -12,6 +10,7 @@ export default function fetchAnimais(url, target) {
   }
 
   // Preenche cada animal no DOM
+  const numerosGrid = document.querySelector(target);
   function preencherAnimais(animal) {
     const divAnimal = createAnimal(animal);
     numerosGrid.appendChild(divAnimal);
