@@ -195,7 +195,7 @@ body {
 }
 
 @media (max-width: 700px) {
-  body {
+  .grid-container {
     grid-template-columns: 1fr;
   }
   .menu,
@@ -315,7 +315,7 @@ body {
   border: 2px solid #000;
 }
 
-[data-semana]::after {
+[data-semana].aberto::after {
   background: #3f4;
 }
 
