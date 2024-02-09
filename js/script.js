@@ -50,6 +50,5 @@ fetchAnimais("./animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 const slide = new SlideNav(".slide", ".slide-wrapper");
-console.log(slide);
 slide.init();
 slide.addControl(".custom-controls");
